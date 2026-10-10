@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Online Result Calculator</title>
+<link rel="stylesheet" href="result.css">
+</head>
+<body>
+<div class="container">
+    <h1>EduTech Hub Result</h1>
+    <div class="student">
+        <input type="text" id="name" placeholder="Student Name">
+        <input type="text" id="roll" placeholder="Roll Number">
+    </div>
+    <div class="marks">
+        <input type="number" id="english" placeholder="English Marks (0-100)">
+        <input type="number" id="math" placeholder="Mathematics Marks (0-100)">
+        <input type="number" id="science" placeholder="Science Marks (0-100)">
+        <input type="number" id="computer" placeholder="Computer Marks (0-100)">
+        <input type="number" id="hindi" placeholder="Hindi Marks (0-100)">
+    </div>
+    <button onclick="calculateResult()">Calculate Result</button>
+    <button class="reset" onclick="resetForm()">Reset</button>
+    <div id="result">
+        <h2>Student Result</h2>
+        <div class="result-row">
+            <b>Name:</b>
+            <span id="resultName"></span>
+        </div>
+        <div class="result-row">
+            <b>Roll Number:</b>
+            <span id="resultRoll"></span>
+        </div>
+        <div class="result-row">
+            <b>Total Marks:</b>
+            <span id="total"></span>
+        </div>
+        <div class="result-row">
+            <b>Percentage:</b>
+            <span id="percentage"></span>
+        </div>
+        <div class="result-row">
+            <b>Grade:</b>
+            <span id="grade"></span>
+        </div>
+        <div class="result-row">
+            <b>Result:</b>
+            <span id="status"></span>
+        </div>
+    </div>
+</div>
+<a href="login.html" class="prev">←</a>
+<a href="index.html" class="next">→</a>
+</body>
+<script src="result.js"></script>
+</html>
